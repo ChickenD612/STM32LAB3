@@ -13,15 +13,6 @@ void fsm_manual_run(){
 		status = RED;
 		SCAN_7SEG2(2);
 		break;
-	case MODE3:
-	        status = GREEN;
-	        SCAN_7SEG2(3);
-	        break;
-	case MODE4:
-	    	y = 3;
-	    	status = YELLOW;
-	    	SCAN_7SEG2(4);
-	    	break;
 	case RED:
 		SCAN_7SEG2(2);
 		if(timer4_flag == 1){
@@ -32,9 +23,7 @@ void fsm_manual_run(){
 		}
 		if(isButtonPressed(1) == 1){
 			status = ADJ_RED;
-			if(x>=99){
-				x=z+1;
-			}
+			if(x>=99){x=z+1;}
 			else{
 				x++;
 			}
@@ -57,6 +46,10 @@ void fsm_manual_run(){
 			status = MODE1;
 		}
 		break;
+    case MODE3:
+        status = GREEN;
+        SCAN_7SEG2(3);
+        break;
     case GREEN:
     	 SCAN_7SEG2(3);
     	 traffic_light(GREEN);
@@ -93,6 +86,11 @@ void fsm_manual_run(){
     		z = x - y;
     	 }
     	 break;
+    case MODE4:
+    	y = 3;
+    	status = YELLOW;
+    	SCAN_7SEG2(4);
+    	break;
     case YELLOW:
     	SCAN_7SEG2(4);
     	traffic_light(YELLOW);
@@ -104,9 +102,7 @@ void fsm_manual_run(){
     	}
     	if(isButtonPressed(1)== 1){
     		status = ADJ_YELLOW;
-    		if(z >= 99-y){
-    			z=1;
-    		}
+    		if(z >= 99-y){z=1;}
     		else z++;
     	}
     	break;
@@ -114,9 +110,7 @@ void fsm_manual_run(){
     	SCAN_7SEG2(4);
     	traffic_light(YELLOW);
     	if(isButtonPressed(1) == 1){
-    		if(z>=99-y){
-    			z=1;
-    		}
+    		if(z>=99-y){z=1;}
     		else z++;
     	}
     	updateClockBuffer(z, z);

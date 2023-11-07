@@ -1,4 +1,4 @@
-Core/Src/Manual_fsm.o: ../Core/Src/Manual_fsm.c ../Core/Inc/Manual_fsm.h \
+Core/Src/manual_fsm.o: ../Core/Src/manual_fsm.c ../Core/Inc/Manual_fsm.h \
  ../Core/Inc/global.h ../Core/Inc/Automatic_fsm.h ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \

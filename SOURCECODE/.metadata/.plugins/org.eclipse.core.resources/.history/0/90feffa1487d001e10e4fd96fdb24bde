@@ -33,9 +33,10 @@ void fsm_automatic_run(){
         setTimer1(y*100);
         setTimer2(1);
         timer3_flag = 1;
-        if (isButtonPressed(0) == 1){
+        if(isButtonPressed(0) == 1){
         	status = MODE2;
         }
+
         break;
 	case RED1_GREEN :
 		SCAN_7SEG2(1);
@@ -60,7 +61,10 @@ void fsm_automatic_run(){
         if(isButtonPressed(0)== 1){
         	status = MODE2;
         }
+
+
 		break;
+
 	case GREEN1_RED:
 		SCAN_7SEG2(1);
 		SEG7_1_run(y,y+z);
@@ -72,7 +76,9 @@ void fsm_automatic_run(){
         if(isButtonPressed(0)== 1){
         	status = MODE2;
         }
+
 		break;
+
 	case YELLOW1_RED:
 		SCAN_7SEG2(1);
 		SEG7_1_run(z,y+z);
@@ -85,6 +91,7 @@ void fsm_automatic_run(){
         if(isButtonPressed(0)== 1){
         	status = MODE2;
         }
+
 	default:
 		break;
 		}

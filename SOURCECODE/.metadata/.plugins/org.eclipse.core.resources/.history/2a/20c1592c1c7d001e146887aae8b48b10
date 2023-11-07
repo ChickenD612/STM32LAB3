@@ -20,8 +20,8 @@ int KeyReg2[NUMBER_OF_BUTTONS];
 int KeyReg3[NUMBER_OF_BUTTONS];
 int TimeOutForKeyPress[NUMBER_OF_BUTTONS];
 int flag[NUMBER_OF_BUTTONS];
-uint16_t gpio_pin[NUMBER_OF_BUTTONS] = {BUTTON_1_Pin, BUTTON_2_Pin, BUTTON_3_Pin};
-GPIO_TypeDef* gpio_port[NUMBER_OF_BUTTONS] = {BUTTON_1_GPIO_Port, BUTTON_2_GPIO_Port, BUTTON_3_GPIO_Port};
+uint16_t gpio_pin[NUMBER_OF_BUTTONS] = {BUTTON1_Pin, BUTTON2_Pin, BUTTON3_Pin};
+GPIO_TypeDef* gpio_port[NUMBER_OF_BUTTONS] = {BUTTON1_GPIO_Port, BUTTON2_GPIO_Port, BUTTON3_GPIO_Port};
 
 void initializeArrays_for_Button() {
   for (int i = 0; i < NUMBER_OF_BUTTONS; ++i) {

@@ -202,3 +202,6 @@ org.eclipse.ui.PartInitException: Invalid Input: Must be IFileEditorInput
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 !SUBENTRY 1 org.eclipse.ui 4 0 2023-11-07 09:54:01.988
 !MESSAGE Invalid Input: Must be IFileEditorInput
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2023-11-07 10:23:46.029
+!MESSAGE Won't launch debug session since we failed to locate the binary.

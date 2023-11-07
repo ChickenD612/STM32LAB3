@@ -1,8 +1,8 @@
 /*
- * fsm_manual.c
+ * manual_fsm.c
  *
- *  Created on: Nov 6, 2023
- *      Author: Acer
+ *  Created on: Nov 7, 2023
+ *      Author: ASUS
  */
 
 #include "fsm_manual.h"
@@ -126,6 +126,3 @@ void fsm_manual_run(){
     	break;
 	}
 }
-
-
-

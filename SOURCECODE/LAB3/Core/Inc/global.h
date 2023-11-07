@@ -1,8 +1,8 @@
 /*
  * global.h
  *
- *  Created on: Nov 6, 2023
- *      Author: Acer
+ *  Created on: Nov 7, 2023
+ *      Author: ASUS
  */
 
 #ifndef INC_GLOBAL_H_
@@ -13,8 +13,8 @@
 #include "led_display.h"
 #include "traffic_light.h"
 #include "input_reading.h"
-#include "fsm_automatic.h"
-#include "input_reading.h"
+#include "Automatic_fsm.h"
+#include "manual_fsm.h"
 
 #define INIT 1
 #define RED1_GREEN 2
@@ -67,7 +67,5 @@ extern int c;
 extern int y;
 extern int z;
 extern int x;
-
-
 
 #endif /* INC_GLOBAL_H_ */

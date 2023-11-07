@@ -1,10 +1,9 @@
 /*
  * traffic_light.c
  *
- *  Created on: Nov 6, 2023
- *      Author: Acer
+ *  Created on: Nov 7, 2023
+ *      Author: ASUS
  */
-
 
 #include "traffic_light.h"
 
@@ -83,5 +82,3 @@ void traffic_light(int status){
 	break;
 	}
 }
-
-

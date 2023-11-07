@@ -1,9 +1,10 @@
 /*
- * fsm_automatic.c
+ * Automatic_fsm.c
  *
- *  Created on: Nov 6, 2023
- *      Author: Acer
+ *  Created on: Nov 7, 2023
+ *      Author: ASUS
  */
+
 
 #include "fsm_automatic.h"
 int a;
@@ -96,5 +97,3 @@ void fsm_automatic_run(){
 		break;
 		}
 	}
-
-

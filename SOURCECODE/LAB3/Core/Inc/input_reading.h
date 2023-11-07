@@ -1,8 +1,8 @@
 /*
  * input_reading.h
  *
- *  Created on: Nov 6, 2023
- *      Author: Acer
+ *  Created on: Nov 7, 2023
+ *      Author: ASUS
  */
 
 #ifndef INC_INPUT_READING_H_
@@ -18,7 +18,5 @@
 extern int button1_flag;
 
 void getKeyInput();
-
-
 
 #endif /* INC_INPUT_READING_H_ */

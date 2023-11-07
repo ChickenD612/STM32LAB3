@@ -1,9 +1,10 @@
 /*
  * led_display.c
  *
- *  Created on: Nov 6, 2023
- *      Author: Acer
+ *  Created on: Nov 7, 2023
+ *      Author: ASUS
  */
+
 #include "led_display.h"
 
 
@@ -224,7 +225,3 @@ void SEVled_run1(int n ,int m){
 	}
 
 }
-
-
-
-

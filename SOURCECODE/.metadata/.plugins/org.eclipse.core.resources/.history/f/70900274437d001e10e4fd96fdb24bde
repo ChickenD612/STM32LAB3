@@ -1,0 +1,21 @@
+/*
+ * led_display.h
+ *
+ *  Created on: Nov 7, 2023
+ *      Author: ASUS
+ */
+
+#ifndef INC_LED_DISPLAY_H_
+#define INC_LED_DISPLAY_H_
+
+#include"global.h"
+
+void SCAN_7SEG1();
+void SCAN_7SEG2();
+void update7SEG();
+void updateClockBuffer();
+void SEVled_run();
+void button_led();
+void SEVled_run1();
+
+#endif /* INC_LED_DISPLAY_H_ */

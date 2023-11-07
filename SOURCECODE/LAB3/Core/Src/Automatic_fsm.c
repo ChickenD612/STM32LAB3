@@ -7,17 +7,16 @@
 
 
 #include <Automatic_fsm.h>
-int a;
-int b;
-int y ;
-int z ;
-int c;
-int x;
+
+int a,b,c,x,y,z;
+
 void fsm_automatic_run(){
 	if(timer2_flag == 1){
 		c++;
 		setTimer2(15);
-		if ( c > 3){c = 0;}
+		if ( c > 3){
+			c = 0;
+		}
 		update7SEG(c);
 	}
 	switch (status){
@@ -28,7 +27,7 @@ void fsm_automatic_run(){
 		status = MODE1;
         break;
 	case MODE1:
-		SCAN1(1);
+		SCAN_7SEG2(1);
 		traffic_light(status);
 		status = RED1_GREEN ;
         setTimer1(y*100);
@@ -40,8 +39,8 @@ void fsm_automatic_run(){
 
         break;
 	case RED1_GREEN :
-		SCAN1(1);
-		SEVled_run(x,y);
+		SCAN_7SEG2(1);
+		SEG7_1_run(x,y);
 		traffic_light(status);
 		if (timer1_flag == 1){
 			status = RED1_YELLOW;
@@ -52,8 +51,8 @@ void fsm_automatic_run(){
         }
 		break;
 	case RED1_YELLOW:
-		SCAN1(1);
-		SEVled_run(x,z);
+		SCAN_7SEG2(1);
+		SEG7_1_run(x,z);
 		traffic_light(status);
 		if (timer1_flag == 1){
 			status = GREEN1_RED;
@@ -67,8 +66,8 @@ void fsm_automatic_run(){
 		break;
 
 	case GREEN1_RED:
-		SCAN1(1);
-		SEVled_run(y,y+z);
+		SCAN_7SEG2(1);
+		SEG7_1_run(y,y+z);
 		traffic_light(status);
 		if (timer1_flag == 1){
 			status = YELLOW1_RED;
@@ -81,8 +80,8 @@ void fsm_automatic_run(){
 		break;
 
 	case YELLOW1_RED:
-		SCAN1(1);
-		SEVled_run(z,y+z);
+		SCAN_7SEG2(1);
+		SEG7_1_run(z,y+z);
 		traffic_light(status);
 		if (timer1_flag == 1){
 

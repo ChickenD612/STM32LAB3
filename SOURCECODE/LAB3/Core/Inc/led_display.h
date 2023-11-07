@@ -10,12 +10,12 @@
 
 #include"global.h"
 
-void SCAN();
-void SCAN1();
+void SCAN_7SEG1();
+void SCAN_7SEG2();
 void update7SEG();
 void updateClockBuffer();
-void SEVled_run();
 void button_led();
-void SEVled_run1();
+void SEG7_1_run();
+void SEG7_2_run();
 
 #endif /* INC_LED_DISPLAY_H_ */

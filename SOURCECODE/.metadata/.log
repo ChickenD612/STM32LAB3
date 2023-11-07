@@ -205,3 +205,6 @@ org.eclipse.ui.PartInitException: Invalid Input: Must be IFileEditorInput
 
 !ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2023-11-07 10:23:46.029
 !MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2023-11-07 11:04:50.915
+!MESSAGE Won't launch debug session since we failed to locate the binary.

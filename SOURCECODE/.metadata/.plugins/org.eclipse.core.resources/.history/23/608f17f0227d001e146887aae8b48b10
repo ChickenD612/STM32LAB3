@@ -100,7 +100,7 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	  fsm_automatic_run();
-	  fsm_manual_run();
+	  manual_fsm_run();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

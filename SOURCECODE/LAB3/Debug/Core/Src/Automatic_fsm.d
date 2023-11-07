@@ -1,5 +1,6 @@
 Core/Src/Automatic_fsm.o: ../Core/Src/Automatic_fsm.c \
- ../Core/Inc/Automatic_fsm.h ../Core/Inc/global.h ../Core/Inc/main.h \
+ ../Core/Inc/Automatic_fsm.h ../Core/Inc/global.h \
+ ../Core/Inc/Manual_fsm.h ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -25,12 +26,13 @@ Core/Src/Automatic_fsm.o: ../Core/Src/Automatic_fsm.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Core/Inc/software_timer.h ../Core/Inc/led_display.h \
- ../Core/Inc/traffic_light.h ../Core/Inc/input_reading.h \
- ../Core/Inc/Automatic_fsm.h ../Core/Inc/manual_fsm.h
+ ../Core/Inc/traffic_light.h ../Core/Inc/input_reading.h
 
 ../Core/Inc/Automatic_fsm.h:
 
 ../Core/Inc/global.h:
+
+../Core/Inc/Manual_fsm.h:
 
 ../Core/Inc/main.h:
 
@@ -89,7 +91,3 @@ Core/Src/Automatic_fsm.o: ../Core/Src/Automatic_fsm.c \
 ../Core/Inc/traffic_light.h:
 
 ../Core/Inc/input_reading.h:
-
-../Core/Inc/Automatic_fsm.h:
-
-../Core/Inc/manual_fsm.h:

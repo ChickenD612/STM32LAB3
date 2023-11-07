@@ -11,7 +11,7 @@
 
 #define DURATION_FOR_AUTO_INCREASING  100
 #define button_is_pressed       GPIO_PIN_RESET
-#define button_is_realeased     GPIO_PIN_SET
+#define button_is_released     GPIO_PIN_SET
 
 
 int KeyReg0[NUMBER_OF_BUTTONS];

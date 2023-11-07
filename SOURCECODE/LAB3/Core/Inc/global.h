@@ -8,13 +8,13 @@
 #ifndef INC_GLOBAL_H_
 #define INC_GLOBAL_H_
 
+#include <Automatic_fsm.h>
+#include <Manual_fsm.h>
 #include "main.h"
 #include "software_timer.h"
 #include "led_display.h"
 #include "traffic_light.h"
 #include "input_reading.h"
-#include "Automatic_fsm.h"
-#include "manual_fsm.h"
 
 #define INIT 1
 #define RED1_GREEN 2
@@ -48,7 +48,7 @@ int reading_value[3];
 #define button_is_pressed        GPIO_PIN_RESET
 #define button_is_realeased      GPIO_PIN_SET
 
-uint8_t index;
+/*uint8_t index;
 
 static GPIO_PinState buttonBuffer[NO_OF_BUTTONS];
 
@@ -57,7 +57,7 @@ static GPIO_PinState debounceButtonBuffer2[NO_OF_BUTTONS];
 
 static uint8_t flagForButtonPress1s[NO_OF_BUTTONS];
 
-static uint16_t counterForButtonPress1s[NO_OF_BUTTONS];
+static uint16_t counterForButtonPress1s[NO_OF_BUTTONS];*/
 
 extern int status ;
 extern int a;

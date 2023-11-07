@@ -6,7 +6,7 @@
  */
 
 
-#include "Automatic_fsm.h"
+#include <Automatic_fsm.h>
 int a;
 int b;
 int y ;
@@ -34,7 +34,7 @@ void fsm_automatic_run(){
         setTimer1(y*100);
         setTimer2(1);
         timer3_flag = 1;
-        if(isButtonPressed(0)== 1){
+        if(isButtonPressed(0) == 1){
         	status = MODE2;
         }
 

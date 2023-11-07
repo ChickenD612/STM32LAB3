@@ -6,7 +6,7 @@
  */
 
 
-#include <automatic_fsm.h>
+#include <Automatic_fsm.h>
 
 int a,b,c,x,y,z;
 

@@ -1,10 +1,193 @@
-15:36:25 **** Incremental Build of configuration Debug for project LAB3 ****
+15:53:07 **** Incremental Build of configuration Debug for project LAB3 ****
 make -j12 all 
+arm-none-eabi-gcc "../Core/Src/automatic_fsm.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/automatic_fsm.d" -MT"Core/Src/automatic_fsm.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/automatic_fsm.o"
+arm-none-eabi-gcc "../Core/Src/global.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/global.d" -MT"Core/Src/global.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/global.o"
+arm-none-eabi-gcc "../Core/Src/input_reading.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/input_reading.d" -MT"Core/Src/input_reading.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/input_reading.o"
+arm-none-eabi-gcc "../Core/Src/led_display.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/led_display.d" -MT"Core/Src/led_display.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/led_display.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/manual_fsm.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/manual_fsm.d" -MT"Core/Src/manual_fsm.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/manual_fsm.o"
+arm-none-eabi-gcc "../Core/Src/traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/traffic_light.d" -MT"Core/Src/traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/traffic_light.o"
+In file included from ../Core/Src/global.c:8:
+../Core/Inc/global.h:51:9: warning: built-in function 'index' declared as non-function [-Wbuiltin-declaration-mismatch]
+   51 | uint8_t index;
+      |         ^~~~~
+../Core/Inc/global.h:60:17: warning: 'counterForButtonPress1s' defined but not used [-Wunused-variable]
+   60 | static uint16_t counterForButtonPress1s[NO_OF_BUTTONS];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:58:16: warning: 'flagForButtonPress1s' defined but not used [-Wunused-variable]
+   58 | static uint8_t flagForButtonPress1s[NO_OF_BUTTONS];
+      |                ^~~~~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:56:22: warning: 'debounceButtonBuffer2' defined but not used [-Wunused-variable]
+   56 | static GPIO_PinState debounceButtonBuffer2[NO_OF_BUTTONS];
+      |                      ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/automatic_fsm.h:10,
+                 from ../Core/Src/automatic_fsm.c:9:
+../Core/Inc/global.h:51:9: warning: built-in function 'index' declared as non-function [-Wbuiltin-declaration-mismatch]
+   51 | uint8_t index;
+      |         ^~~~~
+../Core/Inc/global.h:55:22: warning: 'debounceButtonBuffer1' defined but not used [-Wunused-variable]
+   55 | static GPIO_PinState debounceButtonBuffer1[NO_OF_BUTTONS];
+      |                      ^~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:53:22: warning: 'buttonBuffer' defined but not used [-Wunused-variable]
+   53 | static GPIO_PinState buttonBuffer[NO_OF_BUTTONS];
+      |                      ^~~~~~~~~~~~
+In file included from ../Core/Inc/input_reading.h:11,
+                 from ../Core/Src/input_reading.c:9:
+../Core/Inc/global.h:51:9: warning: built-in function 'index' declared as non-function [-Wbuiltin-declaration-mismatch]
+   51 | uint8_t index;
+      |         ^~~~~
+In file included from ../Core/Src/main.c:25:
+../Core/Inc/global.h:51:9: warning: built-in function 'index' declared as non-function [-Wbuiltin-declaration-mismatch]
+   51 | uint8_t index;
+      |         ^~~~~
+../Core/Inc/global.h:60:17: warning: 'counterForButtonPress1s' defined but not used [-Wunused-variable]
+   60 | static uint16_t counterForButtonPress1s[NO_OF_BUTTONS];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:58:16: warning: 'flagForButtonPress1s' defined but not used [-Wunused-variable]
+   58 | static uint8_t flagForButtonPress1s[NO_OF_BUTTONS];
+      |                ^~~~~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:56:22: warning: 'debounceButtonBuffer2' defined but not used [-Wunused-variable]
+   56 | static GPIO_PinState debounceButtonBuffer2[NO_OF_BUTTONS];
+      |                      ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/led_display.h:11,
+                 from ../Core/Src/led_display.c:8:
+../Core/Inc/global.h:51:9: warning: built-in function 'index' declared as non-function [-Wbuiltin-declaration-mismatch]
+   51 | uint8_t index;
+      |         ^~~~~
+../Core/Inc/global.h:55:22: warning: 'debounceButtonBuffer1' defined but not used [-Wunused-variable]
+   55 | static GPIO_PinState debounceButtonBuffer1[NO_OF_BUTTONS];
+      |                      ^~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:53:22: warning: 'buttonBuffer' defined but not used [-Wunused-variable]
+   53 | static GPIO_PinState buttonBuffer[NO_OF_BUTTONS];
+      |                      ^~~~~~~~~~~~
+In file included from ../Core/Inc/Manual_fsm.h:11,
+                 from ../Core/Src/manual_fsm.c:8:
+../Core/Inc/global.h:51:9: warning: built-in function 'index' declared as non-function [-Wbuiltin-declaration-mismatch]
+   51 | uint8_t index;
+      |         ^~~~~
+../Core/Src/automatic_fsm.c: In function 'fsm_automatic_run':
+../Core/Inc/global.h:60:17: warning: 'counterForButtonPress1s' defined but not used [-Wunused-variable]
+   60 | static uint16_t counterForButtonPress1s[NO_OF_BUTTONS];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:58:16: warning: 'flagForButtonPress1s' defined but not used [-Wunused-variable]
+   58 | static uint8_t flagForButtonPress1s[NO_OF_BUTTONS];
+      |                ^~~~~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:56:22: warning: 'debounceButtonBuffer2' defined but not used [-Wunused-variable]
+   56 | static GPIO_PinState debounceButtonBuffer2[NO_OF_BUTTONS];
+      |                      ^~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:55:22: warning: 'debounceButtonBuffer1' defined but not used [-Wunused-variable]
+   55 | static GPIO_PinState debounceButtonBuffer1[NO_OF_BUTTONS];
+      |                      ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/automatic_fsm.c:36:13: warning: implicit declaration of function 'isButtonPressed' [-Wimplicit-function-declaration]
+   36 |         if (isButtonPressed(0) == 1){
+      |             ^~~~~~~~~~~~~~~
+In file included from ../Core/Inc/traffic_light.h:11,
+                 from ../Core/Src/traffic_light.c:8:
+../Core/Inc/global.h:51:9: warning: built-in function 'index' declared as non-function [-Wbuiltin-declaration-mismatch]
+   51 | uint8_t index;
+      |         ^~~~~
+../Core/Inc/global.h:53:22: warning: 'buttonBuffer' defined but not used [-Wunused-variable]
+   53 | static GPIO_PinState buttonBuffer[NO_OF_BUTTONS];
+      |                      ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:98:3: warning: implicit declaration of function 'initializeArrays_for_Button' [-Wimplicit-function-declaration]
+   98 |   initializeArrays_for_Button();
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/automatic_fsm.h:10,
+                 from ../Core/Src/automatic_fsm.c:9:
+At top level:
+../Core/Inc/global.h:60:17: warning: 'counterForButtonPress1s' defined but not used [-Wunused-variable]
+   60 | static uint16_t counterForButtonPress1s[NO_OF_BUTTONS];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:60:17: warning: 'counterForButtonPress1s' defined but not used [-Wunused-variable]
+   60 | static uint16_t counterForButtonPress1s[NO_OF_BUTTONS];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:58:16: warning: 'flagForButtonPress1s' defined but not used [-Wunused-variable]
+   58 | static uint8_t flagForButtonPress1s[NO_OF_BUTTONS];
+      |                ^~~~~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:58:16: warning: 'flagForButtonPress1s' defined but not used [-Wunused-variable]
+   58 | static uint8_t flagForButtonPress1s[NO_OF_BUTTONS];
+      |                ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/manual_fsm.c: In function 'fsm_manual_run':
+../Core/Inc/global.h:56:22: warning: 'debounceButtonBuffer2' defined but not used [-Wunused-variable]
+   56 | static GPIO_PinState debounceButtonBuffer2[NO_OF_BUTTONS];
+      |                      ^~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:56:22: warning: 'debounceButtonBuffer2' defined but not used [-Wunused-variable]
+   56 | static GPIO_PinState debounceButtonBuffer2[NO_OF_BUTTONS];
+      |                      ^~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:55:22: warning: 'debounceButtonBuffer1' defined but not used [-Wunused-variable]
+   55 | static GPIO_PinState debounceButtonBuffer1[NO_OF_BUTTONS];
+      |                      ^~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:55:22: warning: 'debounceButtonBuffer1' defined but not used [-Wunused-variable]
+   55 | static GPIO_PinState debounceButtonBuffer1[NO_OF_BUTTONS];
+      |                      ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/manual_fsm.c:30:6: warning: implicit declaration of function 'isButtonPressed' [-Wimplicit-function-declaration]
+   30 |   if(isButtonPressed(0) == 1){
+      |      ^~~~~~~~~~~~~~~
+../Core/Inc/global.h:53:22: warning: 'buttonBuffer' defined but not used [-Wunused-variable]
+   53 | static GPIO_PinState buttonBuffer[NO_OF_BUTTONS];
+      |                      ^~~~~~~~~~~~
+../Core/Inc/global.h:53:22: warning: 'buttonBuffer' defined but not used [-Wunused-variable]
+   53 | static GPIO_PinState buttonBuffer[NO_OF_BUTTONS];
+      |                      ^~~~~~~~~~~~
+In file included from ../Core/Inc/Manual_fsm.h:11,
+                 from ../Core/Src/manual_fsm.c:8:
+At top level:
+../Core/Inc/global.h:60:17: warning: 'counterForButtonPress1s' defined but not used [-Wunused-variable]
+   60 | static uint16_t counterForButtonPress1s[NO_OF_BUTTONS];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:102:4: warning: implicit declaration of function 'fsm_automatic_run' [-Wimplicit-function-declaration]
+  102 |    fsm_automatic_run();
+      |    ^~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:58:16: warning: 'flagForButtonPress1s' defined but not used [-Wunused-variable]
+   58 | static uint8_t flagForButtonPress1s[NO_OF_BUTTONS];
+      |                ^~~~~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:56:22: warning: 'debounceButtonBuffer2' defined but not used [-Wunused-variable]
+   56 | static GPIO_PinState debounceButtonBuffer2[NO_OF_BUTTONS];
+      |                      ^~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:55:22: warning: 'debounceButtonBuffer1' defined but not used [-Wunused-variable]
+   55 | static GPIO_PinState debounceButtonBuffer1[NO_OF_BUTTONS];
+      |                      ^~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:53:22: warning: 'buttonBuffer' defined but not used [-Wunused-variable]
+   53 | static GPIO_PinState buttonBuffer[NO_OF_BUTTONS];
+      |                      ^~~~~~~~~~~~
+../Core/Src/main.c:103:4: warning: implicit declaration of function 'fsm_manual_run' [-Wimplicit-function-declaration]
+  103 |    fsm_manual_run();
+      |    ^~~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:25:
+At top level:
+../Core/Inc/global.h:60:17: warning: 'counterForButtonPress1s' defined but not used [-Wunused-variable]
+   60 | static uint16_t counterForButtonPress1s[NO_OF_BUTTONS];
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:58:16: warning: 'flagForButtonPress1s' defined but not used [-Wunused-variable]
+   58 | static uint8_t flagForButtonPress1s[NO_OF_BUTTONS];
+      |                ^~~~~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:56:22: warning: 'debounceButtonBuffer2' defined but not used [-Wunused-variable]
+   56 | static GPIO_PinState debounceButtonBuffer2[NO_OF_BUTTONS];
+      |                      ^~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:55:22: warning: 'debounceButtonBuffer1' defined but not used [-Wunused-variable]
+   55 | static GPIO_PinState debounceButtonBuffer1[NO_OF_BUTTONS];
+      |                      ^~~~~~~~~~~~~~~~~~~~~
+../Core/Inc/global.h:53:22: warning: 'buttonBuffer' defined but not used [-Wunused-variable]
+   53 | static GPIO_PinState buttonBuffer[NO_OF_BUTTONS];
+      |                      ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Microcontroller\LAB3\SOURCECODE\LAB3\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
 arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+arm-none-eabi-objcopy  -O ihex  LAB3.elf  "LAB3.hex"
    text	   data	    bss	    dec	    hex	filename
-  11836	     40	   1832	  13708	   358c	LAB3.elf
+  11836	     40	   1840	  13716	   3594	LAB3.elf
+arm-none-eabi-objcopy  -O binary  LAB3.elf  "LAB3.bin"
 Finished building: default.size.stdout
  
+Finished building: LAB3.hex
+Finished building: LAB3.bin
+ 
+ 
+Finished building: LAB3.list
+ 
 
-15:36:25 Build Finished. 0 errors, 0 warnings. (took 232ms)
+15:53:08 Build Finished. 0 errors, 47 warnings. (took 1s.243ms)
 
